@@ -1,8 +1,7 @@
 // const _ = require('lodash')
-import _ from 'lodash'
 import './style.css'
 import './style.less'
-import './assest/font/icomoon/style.css'
+import './asset/font/icomoon/style.css'
 import img from './class_01.jpg'
 import React from 'react'
 import ReactDOM from 'react-dom'
@@ -52,6 +51,8 @@ class TestComponent extends React.Component {
             <div>
                 <h3>测试react！</h3>
                 <div>当前数量：{this.state.count}</div>
+                <div>当前环境是: {_ENV_}</div>
+                <div>重新打包</div>
             </div>
         )
     }

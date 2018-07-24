@@ -51,7 +51,11 @@ module.exports = merge(baseWebpackConfig, {
             loaders: [
             {
                 loader: 'babel-loader'
-            }
+            },
+            // 启用eslint
+            // {
+            //     loader: 'eslint-loader'
+            // }
             ],
             threadPool: HappyThreadPool
             // ... 其它配置项

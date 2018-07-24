@@ -34,6 +34,8 @@ loadImg(img)
 delay()
 console.log(111)
 
+import Route from './route'
+
 const rootElement = document.getElementById('app')
 
 class TestComponent extends React.Component {
@@ -52,7 +54,8 @@ class TestComponent extends React.Component {
                 <h3>测试react！</h3>
                 <div>当前数量：{this.state.count}</div>
                 <div>当前环境是: {_ENV_}</div>
-                <div>重新打包</div>
+                <Route />
+
             </div>
         )
     }

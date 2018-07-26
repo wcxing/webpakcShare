@@ -288,8 +288,7 @@ new CleanWebpackPlugin([path.resolve(__dirname, '../output')], {
 }),
 ```
 - mode
-2. webpack4.x以后，提供了mode配置，可以选取的值有
-development和production
+2. webpack4.x以后，提供了mode配置，可以选取的值有development和production，默认值是production这时webpack会自动将打包出的js文件进行压缩。
 3. 打包文件过大？所有的资源都打包进js文件造成了资源过大
 ```
 // 代码分离和压缩

@@ -1,0 +1,10 @@
+/node_modules/
+/dist/
+/output/
+
+.DS_Store
+.idea/misc.xml
+.idea/modules.xml
+.idea/withDocWebpack.iml
+.idea/workspace.xml
+.vscode/settings.json

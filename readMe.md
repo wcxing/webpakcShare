@@ -22,7 +22,14 @@
 ##### 四、代码规范配置
 1. eslint在webpack中的使用
 2. .editorconfig配置文件的使用
+
 ---
+```
+在这个仓库里边有两个分支，master和dev-01
+除此之外还有4个tag，这些tag对应了以上目录中的四步，您可以运行
+git tag 查看这些tag
+git checkout [tagName] 切换到对应tag，查看每一步增量的变化
+```
 
 #### 一、webpack基础搭建
 1. 项目初始化

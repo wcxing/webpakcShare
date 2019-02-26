@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import _ from 'lodash'
 import axios from 'axios'
+import './index.less'
 
 class Login extends PureComponent {
   constructor(props) {
@@ -39,7 +40,7 @@ class Login extends PureComponent {
     return (
       <div>
         <h2>this is loginPage!</h2>
-        <div className="img-test-less">test less!</div>
+        <div className="img-test-less">test less!在less中使用图片！</div>
         <button type="button" onClick={() => this.getRequist()}>发起请求</button>
       </div>
     )

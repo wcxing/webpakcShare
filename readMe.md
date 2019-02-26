@@ -22,7 +22,14 @@
 ##### 四、代码规范配置
 1. eslint在webpack中的使用
 2. .editorconfig配置文件的使用
+
 ---
+```
+在这个仓库里边有两个分支，master和dev-01
+除此之外还有4个tag，这些tag对应了以上目录中的四步，您可以运行
+git tag 查看这些tag
+git checkout [tagName] 切换到对应tag，查看每一步增量的变化
+```
 
 #### 一、webpack基础搭建
 1. 项目初始化
@@ -281,8 +288,7 @@ new CleanWebpackPlugin([path.resolve(__dirname, '../output')], {
 }),
 ```
 - mode
-2. webpack4.x以后，提供了mode配置，可以选取的值有
-development和production
+2. webpack4.x以后，提供了mode配置，可以选取的值有development和production，默认值是production这时webpack会自动将打包出的js文件进行压缩。
 3. 打包文件过大？所有的资源都打包进js文件造成了资源过大
 ```
 // 代码分离和压缩

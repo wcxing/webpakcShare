@@ -14,7 +14,7 @@ module.exports = merge(baseWebpackConfig, {
     mode: 'development', // 代码打包后为非压缩模式，默认为 'production'
     devServer: {
         host: '0.0.0.0',
-        port: '3333',
+        port: '3004',
         open: true,
         // publicPath: '/',
         contentBase: path.resolve(__dirname, '../src'),
@@ -25,14 +25,20 @@ module.exports = merge(baseWebpackConfig, {
         rules: [
             {
                 test: /\.css$/,
-                exclude: /node_modules/,
+                // exclude: /node_modules/,
                 loaders: ['style-loader', 'css-loader']
             },
             {
+
                 test: /\.less$/,
-                exclude: /node_modules/,
+                // exclude: /node_modules/,
                 loaders: ['style-loader', 'css-loader', 'less-loader']
-            }
+            },
+            {
+              test: /\.styl$/,
+              // exclude: /node_modules/,
+              loaders: ['style-loader', 'css-loader', 'stylus-loader']
+          }
         ]
     },
     plugins: [
@@ -60,5 +66,8 @@ module.exports = merge(baseWebpackConfig, {
             threadPool: HappyThreadPool
             // ... 其它配置项
         })
-    ]
+    ],
+    resolve: {
+      extensions: ['.js', '.json', '.css'],
+    }
 })

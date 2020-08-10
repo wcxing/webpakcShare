@@ -1,12 +1,19 @@
 {
     "presets": ["env","react", "stage-0"],
-    "plugins": [["react-transform", {
+    "plugins": [
+      ["react-transform", {
         "transforms": [{
           "transform": "react-transform-hmr",
-          
+
           "imports": ["react"],
-          
+
           "locals": ["module"]
         }]
-      }]]
+      }]
+      // ["import", {
+      //   "libraryName": "wenzai_ui",
+      //   "style": true
+      //   }
+      // ]
+    ]
 }

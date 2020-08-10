@@ -10,9 +10,6 @@ const Home = AsyncComponent(() => import('../page/home/index.js'))
 export default () => (
     <BrowserRouter>
         <div>
-            <ul>
-                <li><Link to="/login">跳转到login</Link></li>
-            </ul>
             <Switch>
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/" component={Home} />

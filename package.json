@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --config ./build/webpack.dev.config.js",
+    "start": "webpack-dev-server --config ./build/webpack.dev.config.js",
     "build-test": "webpack --config ./build/webpack.test.config.js",
     "build-beta": "webpack --config ./build/webpack.beta.config.js",
     "build-prod": "webpack --config ./build/webpack.prod.config.js"
@@ -55,6 +55,9 @@
     "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1",
     "uiw": "^1.16.7",
-    "wenzai_ui": "0.0.8"
+    "wenzai_ui": "0.0.8",
+    "xgplayer": "^2.9.11",
+    "xgplayer-flv.js": "^2.1.2",
+    "xgplayer-mp4": "^1.1.8"
   }
 }

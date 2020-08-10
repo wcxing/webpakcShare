@@ -29,10 +29,9 @@ function getRequist() {
         }, 2000)
     } )
 }
-print(123)
-loadImg(img)
-delay()
-console.log(111)
+// print(123)
+// loadImg(img)
+// delay()
 
 import Route from './route'
 
@@ -73,14 +72,13 @@ class TestComponent extends PureComponent {
         console.log('index render', this.state)
         return (
             <div>
-                <button onClick={() => {this._setState()}}>setstate</button>
+                {/* <button onClick={() => {this._setState()}}>setstate</button>
                 <button onClick={() => { this._dealDOM() }}>dealDOM</button>
                 <h3>测试react！</h3>
                 <div>当前数量：<span id="cur_count">{this.state.count}</span></div>
                 <div>当前name：<span id="cur_count">{this.state.obj.name}</span></div>
-                <div>当前环境是: {_ENV_}</div>
+                <div>当前环境是: {_ENV_}</div> */}
                 <Route />
-
             </div>
         )
     }
